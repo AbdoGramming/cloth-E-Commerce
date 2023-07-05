@@ -2,6 +2,6 @@
 
 @function rem($pixels)
   @if math.is-unitless($pixels)
-    @error "don't use units when using the rem function"
-  @else
     @return math.div($pixels, 16) + rem
+  @else
+    @error "don't use units when using the rem function"

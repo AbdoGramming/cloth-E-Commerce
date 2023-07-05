@@ -1,0 +1,31 @@
+@use '../abstract' as u
+
+.menu-item
+  min-width: max(u.rem(250), 30%) // max() function
+  height: u.rem(240)
+  flex: 1 1 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid black
+  margin: 0 u.$inline-gap u.rem(15)
+  padding-inline: u.$inline-gap
+
+  .content
+    height: u.rem(90)
+    padding: 0 u.rem(25)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border: 1px solid black
+
+    .title
+      font-weight: bold
+      margin-bottom: u.rem(6)
+      font-size: u.rem(22)
+      color: #4a4a4a
+
+    .subtitle
+      font-weight: lighter
+      font-size: u.rem(16)
