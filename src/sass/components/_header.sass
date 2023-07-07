@@ -1,0 +1,23 @@
+@use '../abstract' as f
+
+.header
+  height: f.rem(70)
+  width: 100%
+  display: flex
+  justify-content: space-between
+  margin-bottom: f.rem(25)
+
+  .logo-container
+    height: 100%
+    width: f.rem(70)
+    padding: f.rem(25)
+
+  .options
+    width: 50%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+    .option
+      padding: f.rem(10) f.rem(15)
