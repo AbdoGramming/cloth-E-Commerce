@@ -1,0 +1,27 @@
+@use '../abstract' as f
+
+.collection-item
+  width: 22% //min()
+  display: flex
+  flex-direction: column
+  height: f.rem(350)
+  align-items: center
+
+  .img
+    width: 100%
+    height: 95%
+    margin-bottom: f.rem(5)
+
+  .collection-footer
+    width: 100%
+    height: 5%
+    display: flex
+    justify-content: space-between
+    font-size: f.rem(18)
+
+    .name
+      width: 90%
+      margin-bottom: f.rem(15)
+
+    .price
+      width: 10%

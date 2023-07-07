@@ -1,6 +1,12 @@
-const MenuItem = ({ title, imgUrl, size }) => {
+import { useNavigate } from "react-router-dom";
+
+const MenuItem = ({ title, imgUrl, size, path }) => {
+  const navigation = useNavigate();
   return (
-    <div className={`menu-item ${size}`}>
+    <div
+      className={`menu-item ${size}`}
+      onClick={path ? () => navigation(path) : null}
+    >
       <div
         style={{
           backgroundImage: `url(${imgUrl})`,
